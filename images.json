@@ -1,0 +1,142 @@
+{
+    "A": [
+        {
+            "filename": "./a/russia.png",
+            "result": 0
+        },
+        {
+            "filename": "./a/usa.png",
+            "result": 1
+        },
+        {
+            "filename": "./a/china.png",
+            "result": 2
+        }
+    ],
+    "B": [
+        {
+            "filename": "./b/germany.png",
+            "result": 0
+        },
+        {
+            "filename": "./b/turkey.png",
+            "result": 1
+        },
+        {
+            "filename": "./b/egypt.png",
+            "result": 3
+        }
+    ],
+    "C": [
+        {
+            "filename": "./c/spain.png",
+            "result": 0
+        },
+        {
+            "filename": "./c/italy.png",
+            "result": 1
+        },
+        {
+            "filename": "./c/france.png",
+            "result": 2
+        }
+    ],
+    "D": [
+        {
+            "filename": "./d/slovakia.png",
+            "result": 0
+        },
+        {
+            "filename": "./d/czech.png",
+            "result": 1
+        },
+        {
+            "filename": "./d/ukraine.png",
+            "result": 2
+        }
+    ],
+    "E": [
+        {
+            "filename": "./e/australia.png",
+            "result": 0
+        },
+        {
+            "filename": "./e/canada.png",
+            "result": 1
+        },
+        {
+            "filename": "./e/mexico.png",
+            "result": 2
+        }
+    ],
+    "F": [
+        {
+            "filename": "./f/sri_lanka.png",
+            "result": 0
+        },
+        {
+            "filename": "./f/ghana.png",
+            "result": 1
+        },
+        {
+            "filename": "./f/colombia.png",
+            "result": 2
+        }
+    ],
+    "G": [
+        {
+            "filename": "./g/israel.png",
+            "result": 0
+        },
+        {
+            "filename": "./g/greece.png",
+            "result": 1
+        },
+        {
+            "filename": "./g/guinea.png",
+            "result": 2
+        }
+    ],
+    "H": [
+        {
+            "filename": "./h/new_zealand.png",
+            "result": 0
+        },
+        {
+            "filename": "./h/finland.png",
+            "result": 1
+        },
+        {
+            "filename": "./h/bulgaria.png",
+            "result": 2
+        }
+    ],
+    "I": [
+        {
+            "filename": "./i/estonia.png",
+            "result": 0
+        },
+        {
+            "filename": "./i/albania.png",
+            "result": 1
+        },
+        {
+            "filename": "./i/mongolia.png",
+            "result": 2
+        }
+    ],
+    "J": [
+        {
+            "filename": "./j/dominican_republic.png",
+            "result": 0
+        },
+        {
+            "filename": "./j/maldives.png",
+            "result": 1
+        },
+        {
+            "filename": "./j/luxemburg.png",
+            "result": 2
+        }
+    ]
+}
