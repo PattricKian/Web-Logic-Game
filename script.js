@@ -31,6 +31,11 @@ const loadImages = () => {
         arrayShuffle(tasks)
         localStorage.setItem("tasks", JSON.stringify(tasks));
         currTask = tasks.shift()
+        
+        
+      
+            
+      
     }
     fetch("./images.json")
     .then(res => res.json())
@@ -48,19 +53,57 @@ const loadImages = () => {
         }
         imgObjects = []
     })
+
+   
+
+            
+       
+        
 }
 
 function appendImage(jsonImg){
     var equation = document.createElement("img");
+    
     equation.src = `./images/${jsonImg.filename}`;
     equation.style = "object-fit: none"
     equation.style.cursor = "pointer";
     equation.draggable = true
     equation.setAttribute("class", "row");
     equation.setAttribute("result", jsonImg.result)
-    //equation.setAttribute("data-description", jsonImg.description)
-
     imgObjects.push(equation)
+
+   
+   
+    if(currTask == "E" ){
+    var div = document.getElementById('test_text')
+    div.replaceChildren();
+    div.innerHTML += 'Úroveň: Ľahká';
+    }
+   else if(currTask == "A" ){
+        var div = document.getElementById('test_text')
+        div.replaceChildren();
+        div.innerHTML += 'Úroveň: Ľahká';
+        }
+        else if(currTask == "B" ){
+            var div = document.getElementById('test_text')
+            div.replaceChildren();
+            div.innerHTML += 'Úroveň: Ľahká';
+            }
+            else if(currTask == "C" ){
+                var div = document.getElementById('test_text')
+                div.replaceChildren();
+                div.innerHTML += 'Úroveň: Ľahká';
+                }
+           else if(currTask == "D" ){
+                    var div = document.getElementById('test_text')
+                    div.replaceChildren();
+                    div.innerHTML += 'Úroveň: Ľahká';
+                    }
+else{
+    var div = document.getElementById('test_text')
+    div.replaceChildren();
+    div.innerHTML += 'Úroveň: Tažká';
+}
 }
 
 equations.addEventListener("change", () => {
@@ -88,4 +131,79 @@ hintButton.addEventListener("click", () => {
     hintImage.appendChild(newImg)
 })
 
+
+
+
+
 loadImages()
+
+
+
+
+
+
+
+
+
+
+
+window.onload = function () {
+  
+    var seconds = 00; 
+    var tens = 00; 
+    var appendTens = document.getElementById("tens")
+    var appendSeconds = document.getElementById("seconds")
+    var buttonStart = document.getElementById('button-start');
+    var buttonStop = document.getElementById('button-stop');
+    var buttonReset = document.getElementById('button-reset');
+    var Interval ;
+  
+    buttonStart.onclick = function() {
+      
+      clearInterval(Interval);
+       Interval = setInterval(startTimer, 10);
+    }
+    
+      buttonStop.onclick = function() {
+         clearInterval(Interval);
+    }
+    
+  
+    buttonReset.onclick = function() {
+       clearInterval(Interval);
+      tens = "00";
+        seconds = "00";
+      appendTens.innerHTML = tens;
+        appendSeconds.innerHTML = seconds;
+    }
+    
+     
+    
+    function startTimer () {
+      tens++; 
+      
+      if(tens <= 9){
+        appendTens.innerHTML = "0" + tens;
+      }
+      
+      if (tens > 9){
+        appendTens.innerHTML = tens;
+        
+      } 
+      
+      if (tens > 99) {
+        console.log("seconds");
+        seconds++;
+        appendSeconds.innerHTML = "0" + seconds;
+        tens = 0;
+        appendTens.innerHTML = "0" + 0;
+      }
+      
+      if (seconds > 9){
+        appendSeconds.innerHTML = seconds;
+      }
+    
+    }
+    
+  
+  }

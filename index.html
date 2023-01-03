@@ -15,9 +15,10 @@
     <link rel="manifest" href="manifest.json">
 
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <link rel="icon" type="image/x-icon" href="logo.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="./logo_apple.png">
+    <link rel="apple-touch-icon" href="logo_apple.png">
+    <meta name="apple-mobile-web-app-capable" content="yes">
 
 
 
@@ -27,7 +28,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-
+    <meta name="msapplication-TileColor" content="#888fcb">
     <meta name="theme-color" content="#888fcb" />
     <title>Flaggio</title>
 </head>
@@ -48,7 +49,7 @@
                 <div class="d-flex align-items-center justify-content-center" id="headContent">
                     <img src="logo.png" alt="logo" id="headerImg">
                     <div class="text-center">
-                        <p class="fs-3">Flaggio</p>
+                        <p class="fs-1 font-weight-bold">Flaggio</p>
                     </div>
                 </div>
             </div>
@@ -60,7 +61,8 @@
             <h4 id="assignment">
                 Táto vedomostná hra je postavená na funkcií drag and drop, vašou úlohou je zoradiť vlajky štátov na základe ich počtu obyvateľov <strong>vzostupne</strong>.<br><br>
                 Teda štát s <strong>najnižším</strong> počtom obyvateľov bude <strong>navrchu</strong>, a naopak štát s <strong>najvyšším</strong> počtom obyvateľov zase <strong>naspodku</strong>. 
-                Hra má 10 levelov, t.j. 10 skupín vlajok štátov, poradie levelov je <strong>náhodné</strong>. Dokončené levely sa <strong>neopakujú</strong> dokým ešte sú nejaké neodohrané. 
+                Hra má 10 levelov(5levelov s úrovňou tažká a 5levelov s úrovňou ľahká), t.j. 10 skupín vlajok štátov, poradie levelov je <strong>náhodné</strong>. Dokončené levely sa <strong>neopakujú</strong> dokým ešte sú nejaké neodohrané. 
+                <br> 
             </h4>
         </div>
     </div>
@@ -73,13 +75,26 @@
         </div>
         <div class="col startDiv">
             <button class="btn btn-primary" id="help" data-bs-toggle="modal" data-bs-target="#helpTab">
-                Návod na riešenie
+                Vyriešená úloha
             </button>
         </div>
+
+        
     </div>
+
+    <div class="wrapper">
+        
+        <p><span id="seconds">00</span>:<span id="tens">00</span></p>
+        <button id="button-start">Start</button>
+        <button id="button-stop">Stop</button>
+        <button id="button-reset">Reset</button>
+        </div> 
+   
 
     <div class="w-25">
         <p1 class="flag_text"><strong>Zoraď vlajky</strong></p>
+            <div id="test_text"></div>
+            
 
         <div id="equations" class="d-grid gap-3"></div>
         
@@ -163,5 +178,6 @@
     integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/sortablejs@latest/Sortable.min.js"></script>
       <script src="script.js"></script>
+      
 </body>
 </html>

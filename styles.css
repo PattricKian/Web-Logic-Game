@@ -16,6 +16,11 @@ body {
     border-bottom: 3px solid black;
 }
 
+.timer_container{
+    text-align: center;
+    margin-bottom: 4vh;
+}
+
 /* box s vlajkami */
 
 .flag_text{
@@ -55,7 +60,10 @@ body {
 }
 
 #hintBody {
-    background-color: white;
+    background-color: #edede9;
+}
+#helpBody{
+    background-color: #edede9;
 }
 
 #nextTask {
@@ -67,10 +75,7 @@ body {
     margin: auto;
 }
 
-#modalTxt, #hintTxt, #helpTxt {
-    text-align: center;
-    font-size: calc(1.3rem + .6vw) !important;
-}
+
 
 #assignment {
     text-align: center;
@@ -86,7 +91,6 @@ body {
     border-radius: 0.5rem;
     color: black;
     width: 55%;
-    min-width: 350px;
     margin-bottom: 5vh;
 
 }
@@ -112,7 +116,7 @@ body {
     font-weight: bolder;
     font-size: 140%;
     margin-bottom: 5vh;
-    width: 272px;
+    width: 270px;
 }
 
 #headerImg {
@@ -169,6 +173,56 @@ p {
 
 
 
+/* TIMER */
+
+
+
+
+  .wrapper {
+    width: 800px;
+    margin: 30px auto;
+    color:black;
+    text-align: center;
+  }
+
+  #seconds, #tens {
+    font-size: 2em;
+  }
+  button {
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    -khtml-border-radius: 5px;
+    background: #d6ccc2;
+    color: black;
+    border: solid 1px black;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 1.2em;
+    padding: 18px 10px;
+    width: 180px;
+    margin: 10px;
+    outline: none;
+  }
+  button:hover {
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+    background: #fff;
+    border: solid 1px #fff;
+    color: #ffa600;
+  }
+
+
+
+
+
+
+
+
+
+
+
 
 @media (min-width: 609px) {
     .endDiv {
@@ -177,7 +231,19 @@ p {
     .startDiv {
         text-align: left !important;
     }
+
 }
+
+@media only screen and (max-width: 600px) {
+   #hintWindow{
+    margin-top: 5rem;
+   }
+
+   .wrapper{
+    max-width: 60%;
+   }
+  }
+  
 
 @media print {
     #headerImg, .container {

@@ -2,140 +2,174 @@
     "A": [
         {
             "filename": "./a/russia.png",
+            "diff": "Úroveň: ľahká",
             "result": 0
         },
         {
             "filename": "./a/usa.png",
+            "diff": "Úroveň: ľahká",
             "result": 1
         },
         {
             "filename": "./a/china.png",
+            "diff": "Úroveň: ľahká",
             "result": 2
         }
     ],
     "B": [
         {
             "filename": "./b/germany.png",
+            "diff": "Úroveň: ľahká",
             "result": 0
         },
         {
             "filename": "./b/turkey.png",
+            "diff": "Úroveň: ľahká",
             "result": 1
         },
         {
             "filename": "./b/egypt.png",
+            "diff": "Úroveň: ľahká",
             "result": 3
         }
     ],
     "C": [
         {
             "filename": "./c/spain.png",
+            "diff": "Úroveň: ľahká",
+           
             "result": 0
         },
         {
             "filename": "./c/italy.png",
+            "diff": "Úroveň: ľahká",
+
             "result": 1
         },
         {
             "filename": "./c/france.png",
+            "diff": "Úroveň: ľahká",
             "result": 2
         }
     ],
     "D": [
         {
             "filename": "./d/slovakia.png",
+            "diff": "Úroveň: ľahká",
+            
             "result": 0
         },
         {
             "filename": "./d/czech.png",
+            "diff": "Úroveň: ľahká",
             "result": 1
         },
         {
             "filename": "./d/ukraine.png",
+            "diff": "Úroveň: ľahká",
             "result": 2
         }
     ],
     "E": [
         {
             "filename": "./e/australia.png",
+            "diff": "Úroveň: ľahká",
+            
             "result": 0
         },
         {
             "filename": "./e/canada.png",
+            "diff": "Úroveň: ľahká",
             "result": 1
         },
         {
             "filename": "./e/mexico.png",
+            "diff": "Úroveň: ľahká",
             "result": 2
         }
     ],
     "F": [
         {
             "filename": "./f/sri_lanka.png",
+            "diff": "Úroveň: tažká",
             "result": 0
         },
         {
             "filename": "./f/ghana.png",
+            "diff": "Úroveň: tažká",
             "result": 1
         },
         {
             "filename": "./f/colombia.png",
+            "diff": "Úroveň: tažká",
             "result": 2
         }
     ],
     "G": [
         {
             "filename": "./g/israel.png",
+            "diff": "Úroveň: tažká",
             "result": 0
         },
         {
             "filename": "./g/greece.png",
+            "diff": "Úroveň: tažká",
             "result": 1
         },
         {
             "filename": "./g/guinea.png",
+            "diff": "Úroveň: tažká",
             "result": 2
         }
     ],
     "H": [
         {
             "filename": "./h/new_zealand.png",
+            "diff": "Úroveň: tažká",
             "result": 0
         },
         {
             "filename": "./h/finland.png",
+            "diff": "Úroveň: tažká",
             "result": 1
         },
         {
             "filename": "./h/bulgaria.png",
+            "diff": "Úroveň: tažká",
             "result": 2
         }
     ],
     "I": [
         {
             "filename": "./i/estonia.png",
+            "diff": "Úroveň: tažká",
             "result": 0
         },
         {
             "filename": "./i/albania.png",
+            "diff": "Úroveň: tažká",
             "result": 1
         },
         {
             "filename": "./i/mongolia.png",
+            "diff": "Úroveň: tažká",
             "result": 2
         }
     ],
     "J": [
         {
             "filename": "./j/dominican_republic.png",
+            "diff": "Úroveň: tažká",
             "result": 0
         },
         {
             "filename": "./j/maldives.png",
+            "diff": "Úroveň: tažká",
             "result": 1
         },
         {
             "filename": "./j/luxemburg.png",
+            "diff": "Úroveň: tažká",
             "result": 2
         }
     ]
