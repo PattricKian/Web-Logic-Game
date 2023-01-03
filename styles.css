@@ -13,15 +13,16 @@ header {
 }
 
 body {
-  
+    background-color: #edede9 !important;
 }
 
+/* box s vlajkami */
 .container {
-    background-color: blue;
+    background-color: #f5ebe0;
     width: 25%;
     min-width: 350px;
     
-    border: 10px solid black;
+    border: 5px solid black;
     border-radius: 0.5rem;
     margin-bottom: 2vh;
 }
@@ -41,7 +42,7 @@ body {
 }
 
 #modalBody, #helpH, #hintH {
-    background-color: #888fcb;
+    background-color: #d5bdaf;
     color: white;
     text-align: center;
 }
@@ -51,7 +52,7 @@ body {
 }
 
 #nextTask {
-    background-color: #888fcb;
+    background-color: #d5bdaf;
     border: 3px solid white;
     color: white;
     font-weight: bolder;
@@ -70,11 +71,11 @@ body {
     padding: 1rem;
 }
 
+/* box s vysvetlením */
 #backOf {
     margin-left: auto;
     margin-right: auto;
-    background-color: white;
-    border: 10px solid black;
+    border: 5px solid black;
     border-radius: 0.5rem;
     color: black;
     width: 55%;
@@ -87,9 +88,10 @@ body {
     min-width: 240px;
 }
 
+/* buttons vnutorny */
 #help, #hintTip {
-    background-color: #888fcb;
-    border: 10px solid white;
+    background-color: #E3D5CA;
+    border: 10px solid transparent;
     outline: 5px solid black;
     color: black;
     font-weight: bolder;
@@ -128,17 +130,30 @@ p {
 }
 
 .d-flex {
-    background-color: #888fcb;
+    background-color: #d6ccc2;
 }
 
+/* border pod hlavickou */
 .p-3 {
     padding: 0 !important;
-    border-bottom: 10px solid black;
+    border-bottom: 5px solid transparent;
 }
 
 .endDiv, .startDiv {
     text-align: center;
 }
+
+.info {
+    background-color: #F5EBE0;
+}
+
+
+
+
+
+
+
+
 
 @media (min-width: 609px) {
     .endDiv {
