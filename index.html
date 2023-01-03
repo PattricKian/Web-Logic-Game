@@ -1,25 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
+    <script>
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.register('./sw.js').then(registration=>{
+                console.log("Success")
+            }).catch(error=>{
+                colsole.log("Error")
+            })
+        }
+    </script>
+
+    <link rel="manifest" href="manifest.json">
+
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="icon" type="image/x-icon" href="logo.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="./logo_apple.png">
+
+
+
+
+
     <link rel="stylesheet" href="styles.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <title>Game</title>
+
+    <meta name="theme-color" content="#888fcb" />
+    <title>Flaggio</title>
 </head>
+
+
+
+
+
+
+
+
 <body>
     
     
-    <header class="p-3 bg-dark text-white">
+    <header class="main_header">
         <div class="containerHead">
             <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
                 <div class="d-flex align-items-center justify-content-center" id="headContent">
                     <img src="logo.png" alt="logo" id="headerImg">
                     <div class="text-center">
-                        <p class="fs-3">FlagPopulationQuiz</p>
+                        <p class="fs-3">Flaggio</p>
                     </div>
                 </div>
             </div>
@@ -63,7 +92,9 @@
                     </div>
                     <div class="modal-body" id="hintBody">
                         <div class="container-fluid" id="hintTxt">
-                            <h3>TODO NEVIEM</h3>
+                            <h3> <strong> Ako postupovať k dokončeniu hry ? </strong></h3>
+                            <p1 class="hint_text">Zoraď vlajky podľa počtu obyvateľov vzostupne. <br> Ak tvoje zoradenie bude správne automaticky sa úloha skontroluje, vyhodnotí sa a ponúkne možnosť pokračovať do dalšieho levelu
+                            </p>
                         </div>
                     </div>
                 </div>

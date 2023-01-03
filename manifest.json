@@ -1,0 +1,32 @@
+{
+    "name": "Flaggio",
+    "short_name": "Flg",
+    "start_url": "https://webte1.fei.stuba.sk/~xanderkop/superiortopsecretassignmentFINAL/index.html",
+    "display": "standalone",
+    "orientation": "portrait",
+    "background_color": "#000000",
+    "theme_color": "#888fcb",
+    "prefer_related_applications": false,
+    "lang": "sk",
+    "icons": [
+        {
+          "src": "windows11/icon-192x192.png",
+          "sizes": "192x192"
+        },
+        {
+          "src": "windows11/icon-256x256.png",
+          "sizes": "256x256"
+        },
+        {
+            "src": "windows11/icon-384x384",
+            "sizes": "384x384"
+          },
+          {
+            "src": "windows11/icon-512x512.png",
+            "sizes": "512x512"
+          }
+
+
+
+    ]
+}
